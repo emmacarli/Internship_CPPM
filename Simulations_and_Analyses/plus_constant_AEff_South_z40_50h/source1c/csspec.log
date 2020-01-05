@@ -1,0 +1,1525 @@
+2019-07-23T07:17:22: ********************************************************************************
+2019-07-23T07:17:22: *                                    csspec                                    *
+2019-07-23T07:17:22: * ---------------------------------------------------------------------------- *
+2019-07-23T07:17:22: * Version: 1.6.0                                                               *
+2019-07-23T07:17:22: ********************************************************************************
+2019-07-23T07:17:23: +============+
+2019-07-23T07:17:23: | Parameters |
+2019-07-23T07:17:23: +============+
+2019-07-23T07:17:23:  inobs .....................: /cta/carli/CPPM_Internship/Simulations_and_Analyses/plus_constant_AEff_South_z40_50h/source1c/obs_cube.fits
+2019-07-23T07:17:23:  inmodel ...................: /cta/carli/CPPM_Internship/Simulations_and_Analyses/plus_constant_AEff_South_z40_50h/source1c/obsmodel_binned.xml
+2019-07-23T07:17:23:  srcname ...................: source1c
+2019-07-23T07:17:23:  expcube ...................: /cta/carli/CPPM_Internship/Simulations_and_Analyses/plus_constant_AEff_South_z40_50h/source1c/exposure_cube.fits
+2019-07-23T07:17:23:  psfcube ...................: /cta/carli/CPPM_Internship/Simulations_and_Analyses/plus_constant_AEff_South_z40_50h/source1c/PSF_cube.fits
+2019-07-23T07:17:23:  edispcube .................: /cta/carli/CPPM_Internship/Simulations_and_Analyses/plus_constant_AEff_South_z40_50h/source1c/edisp_cube.fits
+2019-07-23T07:17:23:  bkgcube ...................: /cta/carli/CPPM_Internship/Simulations_and_Analyses/plus_constant_AEff_South_z40_50h/source1c/background_cube.fits
+2019-07-23T07:17:23:  caldb .....................: prod3b-v2
+2019-07-23T07:17:23:  irf .......................: plus_constant_AEff_South_z40_50h
+2019-07-23T07:17:23:  edisp .....................: yes
+2019-07-23T07:17:23:  outfile ...................: /cta/carli/CPPM_Internship/Simulations_and_Analyses/plus_constant_AEff_South_z40_50h/source1c/spectrum_binned.fits
+2019-07-23T07:17:23:  method ....................: AUTO
+2019-07-23T07:17:23:  ebinalg ...................: LOG
+2019-07-23T07:17:23:  emin ......................: 0.1
+2019-07-23T07:17:23:  emax ......................: 199.526229858398
+2019-07-23T07:17:23:  enumbins ..................: 32
+2019-07-23T07:17:23:  ebinfile ..................: [not queried]
+2019-07-23T07:17:23:  statistic .................: DEFAULT
+2019-07-23T07:17:23:  calc_ts ...................: yes
+2019-07-23T07:17:23:  calc_ulim .................: no
+2019-07-23T07:17:23:  fix_srcs ..................: yes
+2019-07-23T07:17:23:  fix_bkg ...................: no
+2019-07-23T07:17:23:  nthreads ..................: 0
+2019-07-23T07:17:23:  publish ...................: no
+2019-07-23T07:17:23:  chatter ...................: 4
+2019-07-23T07:17:23:  clobber ...................: yes
+2019-07-23T07:17:23:  debug .....................: no
+2019-07-23T07:17:23:  mode ......................: ql
+2019-07-23T07:17:23:  logfile ...................: csspec.log
+2019-07-23T07:17:23: 
+2019-07-23T07:17:23: +=================+
+2019-07-23T07:17:23: | Multiprocessing |
+2019-07-23T07:17:23: +=================+
+2019-07-23T07:17:23:  Multiprocessing ...........: available
+2019-07-23T07:17:23:  CPUs available ............: 4
+2019-07-23T07:17:23:  Processes available .......: 4
+2019-07-23T07:17:23: 
+2019-07-23T07:17:23: +=================+
+2019-07-23T07:17:23: | Spectrum method |
+2019-07-23T07:17:23: +=================+
+2019-07-23T07:17:23:  Unbinned CTA observations .: 0
+2019-07-23T07:17:23:  Binned CTA observations ...: 1
+2019-07-23T07:17:23:  On/off CTA observations ...: 0
+2019-07-23T07:17:23:  Other observations ........: 0
+2019-07-23T07:17:23:  Selected spectrum method ..: SLICE
+2019-07-23T07:17:23: 
+2019-07-23T07:17:23: +===================+
+2019-07-23T07:17:23: | Input observation |
+2019-07-23T07:17:23: +===================+
+2019-07-23T07:17:23: === GObservations ===
+2019-07-23T07:17:23:  Number of observations ....: 1
+2019-07-23T07:17:23:  Number of models ..........: 2
+2019-07-23T07:17:23:  Number of observed events .: 320744
+2019-07-23T07:17:23:  Number of predicted events : 0
+2019-07-23T07:17:23: === GCTAObservation ===
+2019-07-23T07:17:23:  Name ......................: 
+2019-07-23T07:17:23:  Identifier ................: 000001
+2019-07-23T07:17:23:  Instrument ................: CTA
+2019-07-23T07:17:23:  Event file ................: /cta/carli/CPPM_Internship/Simulations_and_Analyses/plus_constant_AEff_South_z40_50h/source1c/obs_cube.fits
+2019-07-23T07:17:23:  Event type ................: CountsCube
+2019-07-23T07:17:23:  Statistic .................: cstat
+2019-07-23T07:17:23:  Ontime ....................: 144000 s
+2019-07-23T07:17:23:  Livetime ..................: 141120 s
+2019-07-23T07:17:23:  Deadtime correction .......: 0.98
+2019-07-23T07:17:23:  User energy range .........: undefined
+2019-07-23T07:17:23: === GCTAPointing ===
+2019-07-23T07:17:23:  Pointing direction ........: (RA,Dec)=(84.1331,22.0145)
+2019-07-23T07:17:23: === GCTAResponseCube ===
+2019-07-23T07:17:23:  Energy dispersion .........: Not used
+2019-07-23T07:17:23: === GCTACubeExposure ===
+2019-07-23T07:17:23:  Filename ..................: /cta/carli/CPPM_Internship/Simulations_and_Analyses/plus_constant_AEff_South_z40_50h/source1c/exposure_cube.fits
+2019-07-23T07:17:23:  Livetime ..................: 141120 sec
+2019-07-23T07:17:23: === GEnergies ===
+2019-07-23T07:17:23:  Number of energies ........: 33
+2019-07-23T07:17:23: === GGti ===
+2019-07-23T07:17:23:  Number of intervals .......: 1
+2019-07-23T07:17:23:  Ontime ....................: 144000 sec
+2019-07-23T07:17:23:  Elapsed time ..............: 144000 sec
+2019-07-23T07:17:23:  MJD range .................: 51544.5 - 51546.1666666667 s (TT)
+2019-07-23T07:17:23:  UTC range .................: 2000-01-01T11:58:56 - 2000-01-03T03:58:56 s (TT)
+2019-07-23T07:17:23:  Reference MJD .............: 51544.5
+2019-07-23T07:17:23: === GSkyMap ===
+2019-07-23T07:17:23:  Number of pixels ..........: 6400
+2019-07-23T07:17:23:  X axis dimension ..........: 80
+2019-07-23T07:17:23:  Y axis dimension ..........: 80
+2019-07-23T07:17:23:  Number of maps ............: 33
+2019-07-23T07:17:23:  Shape of maps .............: (33)
+2019-07-23T07:17:23: === GCTACubePsf ===
+2019-07-23T07:17:23:  Filename ..................: /cta/carli/CPPM_Internship/Simulations_and_Analyses/plus_constant_AEff_South_z40_50h/source1c/PSF_cube.fits
+2019-07-23T07:17:23: === GEnergies ===
+2019-07-23T07:17:23:  Number of energies ........: 33
+2019-07-23T07:17:23:  Number of delta bins ......: 200
+2019-07-23T07:17:23:  Delta range ...............: 1.875e-06 - 0.298501875 deg
+2019-07-23T07:17:23: === GSkyMap ===
+2019-07-23T07:17:23:  Number of pixels ..........: 1
+2019-07-23T07:17:23:  X axis dimension ..........: 1
+2019-07-23T07:17:23:  Y axis dimension ..........: 1
+2019-07-23T07:17:23:  Number of maps ............: 6600
+2019-07-23T07:17:23:  Shape of maps .............: (200, 33)
+2019-07-23T07:17:23: === GCTACubeEdisp ===
+2019-07-23T07:17:23:  Filename ..................: /cta/carli/CPPM_Internship/Simulations_and_Analyses/plus_constant_AEff_South_z40_50h/source1c/edisp_cube.fits
+2019-07-23T07:17:23: === GEnergies ===
+2019-07-23T07:17:23:  Number of energies ........: 33
+2019-07-23T07:17:23:  Number of migra bins ......: 100
+2019-07-23T07:17:23:  Migra range ...............: 0.02 - 2
+2019-07-23T07:17:23: === GSkyMap ===
+2019-07-23T07:17:23:  Number of pixels ..........: 1
+2019-07-23T07:17:23:  X axis dimension ..........: 1
+2019-07-23T07:17:23:  Y axis dimension ..........: 1
+2019-07-23T07:17:23:  Number of maps ............: 3300
+2019-07-23T07:17:23:  Shape of maps .............: (100, 33)
+2019-07-23T07:17:23: === GCTACubeBackground ===
+2019-07-23T07:17:23:  Filename ..................: /cta/carli/CPPM_Internship/Simulations_and_Analyses/plus_constant_AEff_South_z40_50h/source1c/background_cube.fits
+2019-07-23T07:17:23: === GEbounds ===
+2019-07-23T07:17:23:  Number of intervals .......: 32
+2019-07-23T07:17:23:  Energy range ..............: 100 GeV - 199.526229858398 TeV
+2019-07-23T07:17:23: === GSkyMap ===
+2019-07-23T07:17:23:  Number of pixels ..........: 6400
+2019-07-23T07:17:23:  X axis dimension ..........: 80
+2019-07-23T07:17:23:  Y axis dimension ..........: 80
+2019-07-23T07:17:23:  Number of maps ............: 32
+2019-07-23T07:17:23:  Shape of maps .............: (32)
+2019-07-23T07:17:23: === GCTAResponseCache ===
+2019-07-23T07:17:23:  Number of cached values ...: 0
+2019-07-23T07:17:23: === GCTAEventCube ===
+2019-07-23T07:17:23:  Number of events ..........: 320744
+2019-07-23T07:17:23:  Number of elements ........: 204800
+2019-07-23T07:17:23:  Number of pixels ..........: 6400
+2019-07-23T07:17:23:  Number of energy bins .....: 32
+2019-07-23T07:17:23:  Time interval .............: 51544.5 - 51546.1666666667 days
+2019-07-23T07:17:23:  Pointing ..................: (RA,Dec)=(84.1331,22.0145)
+2019-07-23T07:17:23: === GEbounds ===
+2019-07-23T07:17:23:  Number of intervals .......: 32
+2019-07-23T07:17:23:  Energy range ..............: 100 GeV - 199.526229858398 TeV
+2019-07-23T07:17:23: === GSkyMap ===
+2019-07-23T07:17:23:  Number of pixels ..........: 6400
+2019-07-23T07:17:23:  X axis dimension ..........: 80
+2019-07-23T07:17:23:  Y axis dimension ..........: 80
+2019-07-23T07:17:23:  Number of maps ............: 32
+2019-07-23T07:17:23:  Shape of maps .............: (32)
+2019-07-23T07:17:23: === GSkyRegions ===
+2019-07-23T07:17:23:  Number of regions .........: 0
+2019-07-23T07:17:23: === GModels ===
+2019-07-23T07:17:23:  Number of models ..........: 2
+2019-07-23T07:17:23:  Number of parameters ......: 11
+2019-07-23T07:17:23: === GModelSky ===
+2019-07-23T07:17:23:  Name ......................: source1c
+2019-07-23T07:17:23:  Instruments ...............: all
+2019-07-23T07:17:23:  Test Statistic ............: 67051.673
+2019-07-23T07:17:23:  Observation identifiers ...: all
+2019-07-23T07:17:23:  Model type ................: PointSource
+2019-07-23T07:17:23:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:23:  Number of parameters ......: 7
+2019-07-23T07:17:23:  Number of spatial par's ...: 2
+2019-07-23T07:17:23:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:23:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:23:  Number of spectral par's ..: 4
+2019-07-23T07:17:23:   Prefactor ................: 2.2692228445156e-18 +/- 2.23373270377779e-20 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:23:   Index ....................: -2.00958660949752 +/- 0.00897705190601436 [-0,-5]  (free,scale=-1,gradient)
+2019-07-23T07:17:23:   CutoffEnergy .............: 53897108.7126997 +/- 5035703.39832764 [100000,10000000000] MeV (free,scale=10000000,gradient)
+2019-07-23T07:17:23:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:23:  Number of temporal par's ..: 1
+2019-07-23T07:17:23:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:23:  Number of scale par's .....: 0
+2019-07-23T07:17:23: === GCTAModelCubeBackground ===
+2019-07-23T07:17:23:  Name ......................: BackgroundModel
+2019-07-23T07:17:23:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:23:  Observation identifiers ...: all
+2019-07-23T07:17:23:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:23:  Number of parameters ......: 4
+2019-07-23T07:17:23:  Number of spectral par's ..: 3
+2019-07-23T07:17:23:   Prefactor ................: 0.992884178185177 +/- 0.00441772280183915 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:23:   Index ....................: -0.0035132666375168 +/- 0.00257444912796923 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:23:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:23:  Number of temporal par's ..: 1
+2019-07-23T07:17:23:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:23: 
+2019-07-23T07:17:23: +==================+
+2019-07-23T07:17:23: | Spectral binning |
+2019-07-23T07:17:23: +==================+
+2019-07-23T07:17:23:  Counts cube energy range ..: 100 GeV - 199.526229858398 TeV
+2019-07-23T07:17:23:  Bin 1 .....................: 100 GeV - 126.801677758117 GeV
+2019-07-23T07:17:23:  Bin 2 .....................: 126.801677758117 GeV - 160.786654822733 GeV
+2019-07-23T07:17:23:  Bin 3 .....................: 160.786654822733 GeV - 203.880175926378 GeV
+2019-07-23T07:17:23:  Bin 4 .....................: 203.880175926378 GeV - 258.523483690848 GeV
+2019-07-23T07:17:23:  Bin 5 .....................: 258.523483690848 GeV - 327.812114718727 GeV
+2019-07-23T07:17:23:  Bin 6 .....................: 327.812114718727 GeV - 415.671261357709 GeV
+2019-07-23T07:17:23:  Bin 7 .....................: 415.671261357709 GeV - 527.078133359902 GeV
+2019-07-23T07:17:23:  Bin 8 .....................: 527.078133359902 GeV - 668.343916196521 GeV
+2019-07-23T07:17:23:  Bin 9 .....................: 668.343916196521 GeV - 847.471298931492 GeV
+2019-07-23T07:17:23:  Bin 10 ....................: 847.471298931492 GeV - 1.07460782556364 TeV
+2019-07-23T07:17:23:  Bin 11 ....................: 1.07460782556364 TeV - 1.36262075213471 TeV
+2019-07-23T07:17:23:  Bin 12 ....................: 1.36262075213471 TeV - 1.72782597518709 TeV
+2019-07-23T07:17:23:  Bin 13 ....................: 1.72782597518709 TeV - 2.19091232527777 TeV
+2019-07-23T07:17:23:  Bin 14 ....................: 2.19091232527777 TeV - 2.77811358666159 TeV
+2019-07-23T07:17:23:  Bin 15 ....................: 2.77811358666159 TeV - 3.5226946379131 TeV
+2019-07-23T07:17:23:  Bin 16 ....................: 3.5226946379131 TeV - 4.46683590316902 TeV
+2019-07-23T07:17:23:  Bin 17 ....................: 4.46683590316902 TeV - 5.66402286792025 TeV
+2019-07-23T07:17:23:  Bin 18 ....................: 5.66402286792025 TeV - 7.18207602512629 TeV
+2019-07-23T07:17:23:  Bin 19 ....................: 7.18207602512629 TeV - 9.10699289772362 TeV
+2019-07-23T07:17:23:  Bin 20 ....................: 9.10699289772362 TeV - 11.5478197876261 TeV
+2019-07-23T07:17:23:  Bin 21 ....................: 11.5478197876261 TeV - 14.6428292351937 TeV
+2019-07-23T07:17:23:  Bin 22 ....................: 14.6428292351937 TeV - 18.5673531414817 TeV
+2019-07-23T07:17:23:  Bin 23 ....................: 18.5673531414817 TeV - 23.5437152986732 TeV
+2019-07-23T07:17:23:  Bin 24 ....................: 23.5437152986732 TeV - 29.8538260053121 TeV
+2019-07-23T07:17:23:  Bin 25 ....................: 29.8538260053121 TeV - 37.8551522497248 TeV
+2019-07-23T07:17:23:  Bin 26 ....................: 37.8551522497248 TeV - 48.0009681705405 TeV
+2019-07-23T07:17:23:  Bin 27 ....................: 48.0009681705405 TeV - 60.8660329803851 TeV
+2019-07-23T07:17:23:  Bin 28 ....................: 60.8660329803851 TeV - 77.1791510039371 TeV
+2019-07-23T07:17:23:  Bin 29 ....................: 77.1791510039371 TeV - 97.8644583524627 TeV
+2019-07-23T07:17:23:  Bin 30 ....................: 97.8644583524627 TeV - 124.093775119817 TeV
+2019-07-23T07:17:23:  Bin 31 ....................: 124.093775119817 TeV - 157.352988845312 TeV
+2019-07-23T07:17:23:  Bin 32 ....................: 157.352988845312 TeV - 199.526229858398 TeV
+2019-07-23T07:17:23: 
+2019-07-23T07:17:23: +=========================+
+2019-07-23T07:17:23: | Adjust model parameters |
+2019-07-23T07:17:23: +=========================+
+2019-07-23T07:17:23: === source1c ===
+2019-07-23T07:17:23:  Fixing "Prefactor"
+2019-07-23T07:17:23:  Fixing "Index"
+2019-07-23T07:17:23:  Fixing "CutoffEnergy"
+2019-07-23T07:17:23:  Freeing "Prefactor"
+2019-07-23T07:17:23: === BackgroundModel ===
+2019-07-23T07:17:23: 
+2019-07-23T07:17:23: +===================+
+2019-07-23T07:17:23: | Generate spectrum |
+2019-07-23T07:17:23: +===================+
+2019-07-23T07:17:23: === GEbounds ===
+2019-07-23T07:17:23:  Number of intervals .......: 32
+2019-07-23T07:17:23:  Energy range ..............: 100 GeV - 199.526229858398 TeV
+2019-07-23T07:17:53: +--------------+
+2019-07-23T07:17:53: | Energy bin 1 |
+2019-07-23T07:17:53: +--------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 212.923629000201
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.04998617099382e-18 +/- 1.54744614907781e-19 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.995152491295225 +/- 73549.2673546352 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: -0.00455937852801574 +/- 33842.6448769399 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 1 .....................: 3.346927e-12 +/- 2.526451e-13 erg/cm2/s (TS = 212.924)
+2019-07-23T07:17:53: +--------------+
+2019-07-23T07:17:53: | Energy bin 2 |
+2019-07-23T07:17:53: +--------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 457.856877815735
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.18595562629431e-18 +/- 1.19399297620449e-19 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.996641080155666 +/- 73399.1580729032 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: -0.00545723943365256 +/- 37837.2272416113 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 2 .....................: 3.558810e-12 +/- 1.943861e-13 erg/cm2/s (TS = 457.857)
+2019-07-23T07:17:53: +--------------+
+2019-07-23T07:17:53: | Energy bin 3 |
+2019-07-23T07:17:53: +--------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 763.992789232769
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.14046727931843e-18 +/- 9.69784231182123e-20 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.997602981289124 +/- 223458.560929568 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: -0.00629421104334449 +/- 131072 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 3 .....................: 3.474362e-12 +/- 1.574134e-13 erg/cm2/s (TS = 763.993)
+2019-07-23T07:17:53: +--------------+
+2019-07-23T07:17:53: | Energy bin 4 |
+2019-07-23T07:17:53: +--------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 1359.58229720885
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.35010734808286e-18 +/- 8.82765635850302e-20 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.995167953840157 +/- 110816.571781741 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: -0.00507638933173403 +/- 75674.4544832226 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 4 .....................: 3.802547e-12 +/- 1.428342e-13 erg/cm2/s (TS = 1359.582)
+2019-07-23T07:17:53: +--------------+
+2019-07-23T07:17:53: | Energy bin 5 |
+2019-07-23T07:17:53: +--------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 1715.99754266378
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.21009664455325e-18 +/- 8.06095476482e-20 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.992418784553686 +/- 454024.966850077 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: -0.00313343398906116 +/- 370727.600094733 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 5 .....................: 3.563803e-12 +/- 1.299837e-13 erg/cm2/s (TS = 1715.998)
+2019-07-23T07:17:53: +--------------+
+2019-07-23T07:17:53: | Energy bin 6 |
+2019-07-23T07:17:53: +--------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 2426.44693983075
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.32402589354766e-18 +/- 7.97447519787292e-20 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.987254573747437 +/- 152112.757438199 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: 0.00217589558020581 +/- 154604.096617077 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 6 .....................: 3.733585e-12 +/- 1.281112e-13 erg/cm2/s (TS = 2426.447)
+2019-07-23T07:17:53: +--------------+
+2019-07-23T07:17:53: | Energy bin 7 |
+2019-07-23T07:17:53: +--------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 2681.05217297407
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.22096772463262e-18 +/- 7.84086106687741e-20 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.998181033842304 +/- 458740.171128863 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: -0.0105405201105581 +/- 605395.635865781 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 7 .....................: 3.553379e-12 +/- 1.254478e-13 erg/cm2/s (TS = 2681.052)
+2019-07-23T07:17:53: +--------------+
+2019-07-23T07:17:53: | Energy bin 8 |
+2019-07-23T07:17:53: +--------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 3434.00012995612
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.46013952737445e-18 +/- 8.38815333486005e-20 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.991044818429601 +/- 300715.107744461 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: 3.78719260281188e-05 +/- 581645.312957066 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 8 .....................: 3.917956e-12 +/- 1.335876e-13 erg/cm2/s (TS = 3434.000)
+2019-07-23T07:17:53: +--------------+
+2019-07-23T07:17:53: | Energy bin 9 |
+2019-07-23T07:17:53: +--------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 3419.42098939663
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.2571549595894e-18 +/- 8.09745774519377e-20 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.984376155207809 +/- 26985.9701035937 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: 0.0266326446544738 +/- 96452.6446620493 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 9 .....................: 3.575945e-12 +/- 1.282857e-13 erg/cm2/s (TS = 3419.421)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 10 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 4072.75717854074
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.30837832624784e-18 +/- 8.09608750847404e-20 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.979301081990015 +/- 4575.88673298149 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: 0.288915471862465 +/- 99903.3247876103 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 10 ....................: 3.635151e-12 +/- 1.274943e-13 erg/cm2/s (TS = 4072.757)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 11 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 4047.34393018204
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.16630089888558e-18 +/- 7.73005056748721e-20 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.991735659149041 +/- 18585.8586385096 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: -0.00957963292924749 +/- 98282.2572157001 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 11 ....................: 3.387542e-12 +/- 1.208783e-13 erg/cm2/s (TS = 4047.344)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 12 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 4467.89400305444
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.19535022640951e-18 +/- 7.64898949717613e-20 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 1.00623796108068 +/- 466549.411669301 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: 0.0278938328538352 +/- 1082964.63606208 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 12 ....................: 3.404613e-12 +/- 1.186227e-13 erg/cm2/s (TS = 4467.894)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 13 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 4896.87463631812
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.26100971045778e-18 +/- 7.85486190412363e-20 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 1.02914191628017 +/- 612535.514014567 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: 0.0512685921764367 +/- 894228.617413202 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 13 ....................: 3.471874e-12 +/- 1.206147e-13 erg/cm2/s (TS = 4896.875)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 14 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 5219.15906385382
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.37022576377134e-18 +/- 8.39138298530961e-20 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 1.01626661512334 +/- 67792.1619184855 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: 0.0225480050580162 +/- 73869.0286146129 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 14 ....................: 3.596340e-12 +/- 1.273223e-13 erg/cm2/s (TS = 5219.159)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 15 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 4746.48539737059
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.38200449099202e-18 +/- 9.25420443346264e-20 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.984467289719605 +/- 74911.3643030304 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: -0.010945555402745 +/- 66719.2931622089 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 15 ....................: 3.562025e-12 +/- 1.383864e-13 erg/cm2/s (TS = 4746.485)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 16 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 4017.96831641038
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.30540469121097e-18 +/- 1.00488578974652e-19 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 1.0091383569509 +/- 81224.8011951857 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: 0.00836327305504436 +/- 58412.1847649773 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 16 ....................: 3.386545e-12 +/- 1.476136e-13 erg/cm2/s (TS = 4017.968)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 17 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 3474.76371504761
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.26924927700878e-18 +/- 1.09268613000874e-19 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.995805659006529 +/- 2754488.29699968 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: -0.00169181722103785 +/- 1712317.43768574 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 17 ....................: 3.260893e-12 +/- 1.570181e-13 erg/cm2/s (TS = 3474.764)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 18 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 3337.39442391457
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.37614548394004e-18 +/- 1.20920034779308e-19 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.986047972074507 +/- 2709292.58262452 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: -0.00722905364529066 +/- 1482910.40037893 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 18 ....................: 3.322583e-12 +/- 1.690835e-13 erg/cm2/s (TS = 3337.394)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 19 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 2748.13865735855
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.15593879145603e-18 +/- 1.22566535967417e-19 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.982607563315239 +/- 89953.8680704079 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: -0.00846414561641723 +/- 43795.3379118176 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 19 ....................: 2.913912e-12 +/- 1.656578e-13 erg/cm2/s (TS = 2748.139)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 20 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 2291.67951252931
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.19875524503231e-18 +/- 1.38970265443144e-19 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.983787269507719 +/- 4802541.40097568 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: -0.00744886269877057 +/- 2097152 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 20 ....................: 2.848146e-12 +/- 1.800144e-13 erg/cm2/s (TS = 2291.680)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 21 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 1582.77798471492
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.05827698973635e-18 +/- 1.55288685990888e-19 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 1.0404756876651 +/- 3957966.46807845 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: 0.0151255644796151 +/- 1482910.40037893 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 21 ....................: 2.527862e-12 +/- 1.907170e-13 erg/cm2/s (TS = 1582.778)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 22 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 1381.70523682952
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.21846847324503e-18 +/- 1.80102215220369e-19 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 1.00732402988002 +/- 94282.5618928203 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: 0.0016744910647171 +/- 33395.5796814553 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 22 ....................: 2.548187e-12 +/- 2.068698e-13 erg/cm2/s (TS = 1381.705)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 23 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 935.945116287235
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.00021263081107e-18 +/- 1.95418924324127e-19 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 1.09856288968138 +/- 95783.8282178469 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: 0.031126691910297 +/- 28679.7140495198 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 23 ....................: 2.111815e-12 +/- 2.063223e-13 erg/cm2/s (TS = 935.945)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 24 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 682.915994105794
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 1.86443657488084e-18 +/- 2.1850342453711e-19 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 1.0306010565015 +/- 7083935.76150995 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: 0.00805802278541696 +/- 2097152 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 24 ....................: 1.770048e-12 +/- 2.074415e-13 erg/cm2/s (TS = 682.916)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 25 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 629.053610980484
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.31032578341261e-18 +/- 2.87721318660587e-19 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 1.02952218980411 +/- 96398.4715630657 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: 0.00696840124070312 +/- 26638.1538568448 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 25 ....................: 1.918078e-12 +/- 2.388719e-13 erg/cm2/s (TS = 629.054)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 26 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 521.109240125327
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.97695153689188e-18 +/- 4.18329327377065e-19 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.776673889037327 +/- 8643779.40371827 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: -0.0556481563733551 +/- 2965820.80075786 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 26 ....................: 2.086292e-12 +/- 2.931714e-13 erg/cm2/s (TS = 521.109)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 27 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 215.296433489911
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.20088982685082e-18 +/- 4.53070231351026e-19 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.930321304310975 +/- 96560.2897147323 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: -0.0192136890047322 +/- 26013.4699917318 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 27 ....................: 1.244955e-12 +/- 2.562836e-13 erg/cm2/s (TS = 215.296)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 28 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 156.869522969616
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 2.57750660105234e-18 +/- 6.46582154403902e-19 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 1.147853692306 +/- 97943.0726919734 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: 0.0326671027099027 +/- 20184.2936927119 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 28 ....................: 1.111818e-12 +/- 2.789057e-13 erg/cm2/s (TS = 156.870)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 29 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 104.974959214254
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 3.03701474958328e-18 +/- 9.61954026608843e-19 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 1.06273980347259 +/- 97850.2956589998 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: 0.0121639239767553 +/- 20621.8508870409 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 29 ....................: 9.295499e-13 +/- 2.944287e-13 erg/cm2/s (TS = 104.975)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 30 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 47.2635921491953
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 3.60990873798586e-18 +/- 1.50862708096117e-18 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 1.12463841037592 +/- 15684446.0429463 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: 0.0242725528901614 +/- 2965820.80075786 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 30 ....................: 7.155541e-13 +/- 2.990392e-13 erg/cm2/s (TS = 47.264)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 31 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: 6.5379557562473
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 1.464796933385e-18 +/- 1.48504260523343e-18 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.889141189842904 +/- 97506.4315808617 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: -0.0242818620227519 +/- 22200.1654680979 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 31 ....................: 1.674711e-13 +/- 1.697858e-13 erg/cm2/s (TS = 6.538)
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: | Energy bin 32 |
+2019-07-23T07:17:53: +---------------+
+2019-07-23T07:17:53: === Filtering cube ===
+2019-07-23T07:17:53: === Performing fit in energy bin ===
+2019-07-23T07:17:53: === GModels ===
+2019-07-23T07:17:53:  Number of models ..........: 2
+2019-07-23T07:17:53:  Number of parameters ......: 11
+2019-07-23T07:17:53: === GModelSky ===
+2019-07-23T07:17:53:  Name ......................: source1c
+2019-07-23T07:17:53:  Instruments ...............: all
+2019-07-23T07:17:53:  Test Statistic ............: -3.49037310343192e-06
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: PointSource
+2019-07-23T07:17:53:  Model components ..........: "PointSource" * "ExponentialCutoffPowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 7
+2019-07-23T07:17:53:  Number of spatial par's ...: 2
+2019-07-23T07:17:53:   RA .......................: 83.6331 [-360,360] deg (fixed,scale=1)
+2019-07-23T07:17:53:   DEC ......................: 22.0145 [-90,90] deg (fixed,scale=1)
+2019-07-23T07:17:53:  Number of spectral par's ..: 4
+2019-07-23T07:17:53:   Prefactor ................: 1e-25 +/- 6.55814220732806e-14 [1e-25,1e-15] ph/cm2/s/MeV (free,scale=1e-18,gradient)
+2019-07-23T07:17:53:   Index ....................: -2.00958660949752 [-0,-5]  (fixed,scale=-1,gradient)
+2019-07-23T07:17:53:   CutoffEnergy .............: 53897108.7126997 [100000,10000000000] MeV (fixed,scale=10000000,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 [10000,1000000000] MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Number of scale par's .....: 0
+2019-07-23T07:17:53: === GCTAModelCubeBackground ===
+2019-07-23T07:17:53:  Name ......................: BackgroundModel
+2019-07-23T07:17:53:  Instruments ...............: CTA, HESS, MAGIC, VERITAS
+2019-07-23T07:17:53:  Observation identifiers ...: all
+2019-07-23T07:17:53:  Model type ................: "PowerLaw" * "Constant"
+2019-07-23T07:17:53:  Number of parameters ......: 4
+2019-07-23T07:17:53:  Number of spectral par's ..: 3
+2019-07-23T07:17:53:   Prefactor ................: 0.8964292033666 +/- 11238590.8101639 [0.01,100] ph/cm2/s/MeV (free,scale=1,gradient)
+2019-07-23T07:17:53:   Index ....................: -0.0167154703704829 +/- 2421582.54346312 [-5,5]  (free,scale=1,gradient)
+2019-07-23T07:17:53:   PivotEnergy ..............: 1000000 MeV (fixed,scale=1000000,gradient)
+2019-07-23T07:17:53:  Number of temporal par's ..: 1
+2019-07-23T07:17:53:   Normalization ............: 1 (relative value) (fixed,scale=1,gradient)
+2019-07-23T07:17:53:  Bin 32 ....................: 5.693663e-21 +/- 3.733985e-09 erg/cm2/s
+2019-07-23T07:17:53: 
+2019-07-23T07:17:53: +===============+
+2019-07-23T07:17:53: | Save spectrum |
+2019-07-23T07:17:53: +===============+
+2019-07-23T07:17:53:  Spectrum file .............: /cta/carli/CPPM_Internship/Simulations_and_Analyses/plus_constant_AEff_South_z40_50h/source1c/spectrum_binned.fits
+2019-07-23T07:17:53: 
+2019-07-23T07:17:53: Application "csspec" terminated after 31 wall clock seconds, consuming 0.91 seconds of CPU time.

@@ -1,0 +1,21 @@
+<source_library title="source library">
+  <source name="source2b" ts="41410.710" tscalc="1" type="PointSource">
+    <spectrum type="ExponentialCutoffPowerLaw">
+      <parameter error="0.0183989331960954" free="0" max="1000" min="1e-07" name="Prefactor" scale="1e-18" value="1.52356402352088" />
+      <parameter error="0.0108451667820803" free="0" max="5" min="0" name="Index" scale="-1" value="2.01529668781314" />
+      <parameter error="0.196597048701345" free="1" max="1000" min="0.01" name="CutoffEnergy" scale="100000000" value="1.0661978793252" />
+      <parameter free="0" max="1000" min="0.01" name="PivotEnergy" scale="1000000" value="1" />
+    </spectrum>
+    <spatialModel type="PointSource">
+      <parameter free="0" max="360" min="-360" name="RA" scale="1" value="83.6331" />
+      <parameter free="0" max="90" min="-90" name="DEC" scale="1" value="22.0145" />
+    </spatialModel>
+  </source>
+  <source instrument="CTA,HESS,MAGIC,VERITAS" name="BackgroundModel" type="CTACubeBackground">
+    <spectrum type="PowerLaw">
+      <parameter error="0.00412591271138586" free="0" max="100" min="0.01" name="Prefactor" scale="1" value="0.890023837990093" />
+      <parameter error="0.00266438607072245" free="0" max="5" min="-5" name="Index" scale="1" value="-0.0292234537071111" />
+      <parameter free="0" name="PivotEnergy" scale="1000000" value="1" />
+    </spectrum>
+  </source>
+</source_library>
