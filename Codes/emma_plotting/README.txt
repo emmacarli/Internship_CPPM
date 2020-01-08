@@ -15,4 +15,4 @@ Then some details like...
 
 Comments have been left as such.
 
-I'd be happy to answer any questions: emma.carli@outlook.com
+
