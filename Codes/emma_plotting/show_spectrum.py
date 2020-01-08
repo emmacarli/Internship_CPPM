@@ -1,4 +1,4 @@
-#Author: Emma Carli 
+
 import matplotlib.pyplot as plt
 #Make everything larger for readability on graphs
 plt.rcParams['xtick.labelsize'] = 12

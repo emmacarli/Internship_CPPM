@@ -1,6 +1,6 @@
 #Author: Emma Carli 
 # =============================================================================
-# This code plots togethers counts from simulations using differently bracketed IRFs
+# This code plots together counts from simulations using differently bracketed IRFs
 # =============================================================================
 
 from IPython import get_ipython

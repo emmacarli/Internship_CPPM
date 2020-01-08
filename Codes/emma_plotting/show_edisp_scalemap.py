@@ -1,4 +1,4 @@
-#Author: Emma Carli 
+
 #if ever bracket EDisp in IRF, can use this to plot scale map of energy dispersion
 
 import math

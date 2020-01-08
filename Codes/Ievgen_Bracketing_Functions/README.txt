@@ -1,1 +1,2 @@
+Author: Emma Carli
 Modifications made to Ievgen’s software: Changed plotting (changed colour scale and scheme, and colourbar centred on 1 – no scaling); Saved the new IRF to a standalone folder rather than in the original IRF’s folder for better compatibility with ctools; Removed energy bracketing; Included an if statement that changes an EDisp column name which has been changed between productions (ENERG/ETRUE).

@@ -1,4 +1,4 @@
-#Author: Emma Carli 
+
 import math 
 import gammalib
 import matplotlib.pyplot as plt

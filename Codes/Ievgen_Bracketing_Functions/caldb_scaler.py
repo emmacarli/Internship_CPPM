@@ -1,4 +1,4 @@
-#Author: Emma Carli 
+
 import os
 import shutil
 import glob

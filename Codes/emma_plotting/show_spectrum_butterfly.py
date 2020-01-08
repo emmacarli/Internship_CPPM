@@ -1,4 +1,4 @@
-#Author: Emma Carli 
+
 import matplotlib.pyplot as plt
 import gammalib
 #Make everything larger for readability on graphs

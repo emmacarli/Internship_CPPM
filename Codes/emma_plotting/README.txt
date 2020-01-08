@@ -1,3 +1,4 @@
+Author: Emma Carli
 These plotting scripts have been adapted from ctools'. 
 Main changes :
 - being able to plot at a fixed offset, for multiple IRFs
